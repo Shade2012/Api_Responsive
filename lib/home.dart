@@ -19,13 +19,15 @@ class HomePage extends StatelessWidget {
           final product = productController.productresponsemodel[index];
           return Container(
             margin: EdgeInsets.all(15),
-            child: ListTile(
+            child: Card(
+              child: ListTile(
 
-              //leading: Image.network(productController.productresponsemodel[index].imageLink),
-              // juga bisa seperti ini tetapi yang bawah lebih singkat
-              leading: Image.network(product.imageLink),
-              title: Text(product.name),
+                //leading: Image.network(productController.productresponsemodel[index].imageLink),
+                // juga bisa seperti ini tetapi yang bawah lebih singkat
+                leading: Image.network(product.imageLink),
+                title: Text(product.name),
 
+              ),
             ),
           );
         },

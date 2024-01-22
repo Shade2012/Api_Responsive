@@ -35,7 +35,7 @@ class Tablehome extends StatelessWidget {
                       Image.network(
                         product.imageLink,
                         height: 150, // Set the desired height of the image
-                        width: 300, // Take the full width of the card
+                        width: 200, // Take the full width of the card
                         fit: BoxFit.cover, // Adjust the image fit
                       ),
                       Padding(
@@ -44,7 +44,7 @@ class Tablehome extends StatelessWidget {
                           product.name,
                           style: TextStyle(
                             fontSize: 16,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.bold,overflow: TextOverflow.ellipsis
                           ),
                         ),
                       ),
